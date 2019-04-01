@@ -5,6 +5,7 @@ public class TestGeneratorPatterns {
     public void initGeneratorPatterns() {
         GeneratorPatterns generatorPatterns = new GeneratorPatterns();
     }
+
     @Test
     public void initGeneratorPatternsCPlusPlus() {
         GeneratorPatternsCPlusPlus generatorPatternsCPlusPlus = new GeneratorPatternsCPlusPlus();
