@@ -6,4 +6,9 @@ public class TestMetodsCall {
             GeneratorPatternsJava generatorPatternsJava = new GeneratorPatternsJava();
             generatorPatternsJava.createSingleton();
     }
+    @Test
+    public void callMetodCreateSingletonForCPlusPlus() {
+        GeneratorPatternsCPlusPlus generatorPatternsCPlusPlus = new GeneratorPatternsCPlusPlus();
+        generatorPatternsCPlusPlus.createSingleton();
+    }
 }
