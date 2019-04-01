@@ -1,2 +1,2 @@
-public class GeneratorPatternsJava {
+public class GeneratorPatternsJava extends GeneratorPatterns{
 }

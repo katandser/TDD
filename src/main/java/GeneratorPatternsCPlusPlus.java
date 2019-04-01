@@ -1,2 +1,3 @@
-public class GeneratorPatternsCPlusPlus {
+public class GeneratorPatternsCPlusPlus extends GeneratorPatterns{
+
 }
