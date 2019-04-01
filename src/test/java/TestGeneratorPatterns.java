@@ -11,4 +11,8 @@ public class TestGeneratorPatterns {
         GeneratorPatternsCPlusPlus generatorPatternsCPlusPlus = new GeneratorPatternsCPlusPlus();
     }
 
+    @Test
+    public void initGeneratorPatternsJava() {
+        GeneratorPatternsJava generatorPatternsJava = new GeneratorPatternsJava();
+    }
 }
