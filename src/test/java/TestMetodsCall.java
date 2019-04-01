@@ -11,4 +11,10 @@ public class TestMetodsCall {
         GeneratorPatternsCPlusPlus generatorPatternsCPlusPlus = new GeneratorPatternsCPlusPlus();
         generatorPatternsCPlusPlus.createSingleton();
     }
+    @Test
+    public void callcallMetodCreateSingletonForUnknowGenerator() {
+        GeneratorPatterns[] arrayGeneratorPatterns = {new GeneratorPatternsCPlusPlus(), new GeneratorPatternsJava()};
+        arrayGeneratorPatterns[0].createSingleton();
+        arrayGeneratorPatterns[1].createSingleton();
+    }
 }
