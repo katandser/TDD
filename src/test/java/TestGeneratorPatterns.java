@@ -2,7 +2,12 @@ import org.junit.Test;
 
 public class TestGeneratorPatterns {
     @Test
-    public void initGenerator() {
+    public void initGeneratorPatterns() {
         GeneratorPatterns generatorPatterns = new GeneratorPatterns();
     }
+    @Test
+    public void initGeneratorPatternsCPlusPlus() {
+        GeneratorPatternsCPlusPlus generatorPatternsCPlusPlus = new GeneratorPatternsCPlusPlus();
+    }
+
 }
