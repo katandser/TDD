@@ -15,4 +15,8 @@ public class TestGeneratorPatterns {
     public void initGeneratorPatternsJava() {
         GeneratorPatternsJava generatorPatternsJava = new GeneratorPatternsJava();
     }
+    @Test
+    public void initGenerationAllOneContainer() {
+        GeneratorPatterns[] arrayGeneratorPatterns = {new GeneratorPatternsCPlusPlus(), new GeneratorPatternsJava()};
+    }
 }
