@@ -1,5 +1,5 @@
 public class GeneratorPatternsJava extends GeneratorPatterns{
     public String createSingleton() {
-        return new String();
+        return new String("1");
     }
 }
