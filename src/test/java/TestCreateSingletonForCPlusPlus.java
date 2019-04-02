@@ -1,11 +1,12 @@
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
-public class TestCreateCingletonForJava {
+public class TestCreateSingletonForCPlusPlus {
     @Test
     public void createSingletonReturnsString() {
         String string = new String();
-        GeneratorPatternsJava generatorPatterns = new GeneratorPatternsJava();
+        GeneratorPatternsCPlusPlus generatorPatterns = new GeneratorPatternsCPlusPlus();
         assertEquals(string, generatorPatterns.createSingleton());
     }
 }
