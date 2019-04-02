@@ -1,5 +1,5 @@
 public class GeneratorPatterns {
-    public void createSingleton() {
-
+    public String createSingleton() {
+        return new String();
     }
 }
