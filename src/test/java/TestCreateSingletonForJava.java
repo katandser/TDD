@@ -37,4 +37,19 @@ public class TestCreateSingletonForJava {
         GeneratorPatternsJava generatorPatterns = new GeneratorPatternsJava();
         assertEquals(string,generatorPatterns.createSingleton("name"));
     }
+    @Test
+    public void assertReturningValuesWithExampleWhichTheHaveNameOf_Server_() {
+        String string =" class Server {\n" +
+                "    private static Singleton instance;\n" +
+                "    private Singleton() {}\n" +
+                "    public static Singleton getInstance() {\n" +
+                "        if (instance == null) {\n" +
+                "            instance = new Singleton();\n" +
+                "        }\n" +
+                "        return instance;\n" +
+                "    }\n" +
+                "} ";
+        GeneratorPatternsJava generatorPatterns = new GeneratorPatternsJava();
+        assertEquals(string,generatorPatterns.createSingleton("Server"));
+    }
 }
