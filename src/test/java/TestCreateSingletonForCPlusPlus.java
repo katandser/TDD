@@ -4,12 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 public class TestCreateSingletonForCPlusPlus {
     @Test
-    public void createSingletonReturnsString() {
-        String string = new String();
-        GeneratorPatternsCPlusPlus generatorPatterns = new GeneratorPatternsCPlusPlus();
-        assertEquals(string, generatorPatterns.createSingleton());
-    }
-    @Test
     public void assertReturningValuesWithExample() {
         String string =
                 "class Singleton\n" +
