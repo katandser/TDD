@@ -1,6 +1,6 @@
 public class GeneratorPatternsJava extends GeneratorPatterns{
     public String createSingleton() {
-        return new String(" class Singleton {\n" +
+        return  " class Singleton {\n" +
                 "    private static Singleton instance;\n" +
                 "    private Singleton() {}\n" +
                 "    public static Singleton getInstance() {\n" +
@@ -9,9 +9,18 @@ public class GeneratorPatternsJava extends GeneratorPatterns{
                 "        }\n" +
                 "        return instance;\n" +
                 "    }\n" +
-                "} ");
+                "} ";
     }
     public String createSingleton(String nameOfPattern) {
-        return new String();
+        return  " class name {\n" +
+                "    private static Singleton instance;\n" +
+                "    private Singleton() {}\n" +
+                "    public static Singleton getInstance() {\n" +
+                "        if (instance == null) {\n" +
+                "            instance = new Singleton();\n" +
+                "        }\n" +
+                "        return instance;\n" +
+                "    }\n" +
+                "} ";
     }
 }
