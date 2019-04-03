@@ -17,4 +17,7 @@ public class GeneratorPatternsCPlusPlus extends GeneratorPatterns{
                 "};\n" +
                 "Singleton* Singleton::p_instance = 0;";
     }
+    public String createSingleton(String nameOfPatterns) {
+        return new String();
+    }
 }
