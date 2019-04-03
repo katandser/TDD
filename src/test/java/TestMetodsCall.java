@@ -22,4 +22,9 @@ public class TestMetodsCall {
         GeneratorPatternsJava generatorPatternsJava = new GeneratorPatternsJava();
         generatorPatternsJava.createSingleton("name");
     }
+    @Test
+    public void callMetodCreateSingletonWithName_name_ForCPlusPlus() {
+        GeneratorPatternsCPlusPlus generatorPatternsCPlusPlus = new GeneratorPatternsCPlusPlus();
+        generatorPatternsCPlusPlus.createSingleton("name");
+    }
 }
