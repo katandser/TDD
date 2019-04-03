@@ -11,4 +11,7 @@ public class GeneratorPatternsJava extends GeneratorPatterns{
                 "    }\n" +
                 "} ");
     }
+    public String createSingleton(String nameOfPattern) {
+        return new String();
+    }
 }
