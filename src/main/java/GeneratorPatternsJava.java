@@ -23,7 +23,7 @@ public class GeneratorPatternsJava extends GeneratorPatterns{
                 "    }\n" +
                 "} ";
     }
-    public void createDelegation(String basicClass, String delegationClass) {
-
+    public String createDelegation(String basicClass, String delegationClass) {
+        return new String();
     }
 }
