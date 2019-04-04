@@ -66,7 +66,7 @@ public class TestCreateSingletonForCPlusPlus {
                         "};\n" +
                         "Human* Human::p_instance = 0;";
         GeneratorPatternsCPlusPlus generatorPatterns = new GeneratorPatternsCPlusPlus();
-        assertEquals(string,generatorPatterns.createSingleton("name"));
+        assertEquals(string,generatorPatterns.createSingleton("Human"));
     }
 
 }
