@@ -33,8 +33,13 @@ public class TestMetodsCall {
         generatorPatternsJava.createDelegation("one", "two");
     }
     @Test
-    public void callMetodCreateDelegationJavaWithOneArgs() {
+    public void callMetodCreateDelegationJavaWithThreeArgs() {
         GeneratorPatternsJava generatorPatternsJava = new GeneratorPatternsJava();
         generatorPatternsJava.createDelegation("one", "two", "3");
+    }
+    @Test
+    public void callMetodCreateDelegationJavaWithFourArgs() {
+        GeneratorPatternsJava generatorPatternsJava = new GeneratorPatternsJava();
+        generatorPatternsJava.createDelegation("one", "two", "3", "4");
     }
 }
