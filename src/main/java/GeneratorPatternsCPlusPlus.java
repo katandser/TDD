@@ -36,6 +36,9 @@ public class GeneratorPatternsCPlusPlus extends GeneratorPatterns{
                     "};\n" +
                     "name* name::p_instance = 0;";
         }
+        else if (nameOfPatterns.equals("Singleton")) {
+            return this.createSingleton();
+        }
         else {
             return "class Human\n" +
                     "{\n" +
