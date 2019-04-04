@@ -25,4 +25,27 @@ public class TestCreateSingletonForCPlusPlus {
         GeneratorPatternsCPlusPlus generatorPatterns = new GeneratorPatternsCPlusPlus();
         assertEquals(string,generatorPatterns.createSingleton());
     }
+    @Test
+    public void assertReturningValuesWithExampleWhichTheHaveNameOf_name_() {
+        String string =
+                "class name\n" +
+                        "{\n" +
+                        "  private:\n" +
+                        "    static name * p_instance;\n" +
+                        "    // Конструкторы и оператор присваивания недоступны клиентам\n" +
+                        "    name() {}\n" +
+                        "    name( const Singleton& );  \n" +
+                        "    name& operator=( Singleton& );\n" +
+                        "  public:\n" +
+                        "    static name * getInstance() {\n" +
+                        "        if(!p_instance)           \n" +
+                        "            p_instance = new name();\n" +
+                        "        return p_instance;\n" +
+                        "    }\n" +
+                        "};\n" +
+                        "name* name::p_instance = 0;";
+        GeneratorPatternsCPlusPlus generatorPatterns = new GeneratorPatternsCPlusPlus();
+        assertEquals(string,generatorPatterns.createSingleton("name"));
+    }
+
 }

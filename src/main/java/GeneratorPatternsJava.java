@@ -13,11 +13,11 @@ public class GeneratorPatternsJava extends GeneratorPatterns{
     }
     public String createSingleton(String nameOfPattern) {
         return  " class " + nameOfPattern + " {\n" +
-                "    private static Singleton instance;\n" +
-                "    private Singleton() {}\n" +
-                "    public static Singleton getInstance() {\n" +
+                "    private static " + nameOfPattern + " instance;\n" +
+                "    private " + nameOfPattern + "() {}\n" +
+                "    public static " + nameOfPattern + " getInstance() {\n" +
                 "        if (instance == null) {\n" +
-                "            instance = new Singleton();\n" +
+                "            instance = new " + nameOfPattern + "();\n" +
                 "        }\n" +
                 "        return instance;\n" +
                 "    }\n" +
