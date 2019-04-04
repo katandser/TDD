@@ -28,7 +28,7 @@ public class GeneratorPatternsJava extends GeneratorPatterns{
         return new String();
     }
 
-    public String createDelegation(String basicClass, String delegationClass, String method) {
+    public String createDelegation(String basicClass, String delegationClass, String ... method) {
         return new String();
     }
 }
