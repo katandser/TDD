@@ -54,6 +54,7 @@ public class TestCreateSingletonForCPlusPlus {
                         "{\n" +
                         "  private:\n" +
                         "    static Human * p_instance;\n" +
+                        "    // Конструкторы и оператор присваивания недоступны клиентам\n" +
                         "    Human() {}\n" +
                         "    Human( const Human& );  \n" +
                         "    Human& operator=( Human& );\n" +
