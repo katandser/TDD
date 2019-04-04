@@ -18,6 +18,21 @@ public class GeneratorPatternsCPlusPlus extends GeneratorPatterns{
                 "Singleton* Singleton::p_instance = 0;";
     }
     public String createSingleton(String nameOfPatterns) {
-        return new String();
+        return "class name\n" +
+                "{\n" +
+                "  private:\n" +
+                "    static name * p_instance;\n" +
+                "    // Конструкторы и оператор присваивания недоступны клиентам\n" +
+                "    name() {}\n" +
+                "    name( const Singleton& );  \n" +
+                "    name& operator=( Singleton& );\n" +
+                "  public:\n" +
+                "    static name * getInstance() {\n" +
+                "        if(!p_instance)           \n" +
+                "            p_instance = new name();\n" +
+                "        return p_instance;\n" +
+                "    }\n" +
+                "};\n" +
+                "name* name::p_instance = 0;";
     }
 }
