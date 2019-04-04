@@ -27,4 +27,9 @@ public class TestMetodsCall {
         GeneratorPatternsCPlusPlus generatorPatternsCPlusPlus = new GeneratorPatternsCPlusPlus();
         generatorPatternsCPlusPlus.createSingleton("name");
     }
+    @Test
+    public void callMetodCreateDelegationJava() {
+        GeneratorPatternsJava generatorPatternsJava = new GeneratorPatternsJava();
+        generatorPatternsJava.createDelegation("one", "two");
+    }
 }
