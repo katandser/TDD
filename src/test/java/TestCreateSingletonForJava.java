@@ -104,7 +104,7 @@ public class TestCreateSingletonForJava {
                         "}"
                 ;
         GeneratorPatternsJava generatorPatterns = new GeneratorPatternsJava();
-        assertEquals(string,generatorPatterns.createDelegation("A","C"));
+        assertEquals(string,generatorPatterns.createDelegation("B","C"));
     }
 
 }
