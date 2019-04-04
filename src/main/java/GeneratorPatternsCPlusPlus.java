@@ -24,8 +24,8 @@ public class GeneratorPatternsCPlusPlus extends GeneratorPatterns{
                 "    static name * p_instance;\n" +
                 "    // Конструкторы и оператор присваивания недоступны клиентам\n" +
                 "    name() {}\n" +
-                "    name( const Singleton& );  \n" +
-                "    name& operator=( Singleton& );\n" +
+                "    name( const name& );  \n" +
+                "    name& operator=( name& );\n" +
                 "  public:\n" +
                 "    static name * getInstance() {\n" +
                 "        if(!p_instance)           \n" +

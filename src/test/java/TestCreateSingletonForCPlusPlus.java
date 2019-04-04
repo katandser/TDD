@@ -34,8 +34,8 @@ public class TestCreateSingletonForCPlusPlus {
                         "    static name * p_instance;\n" +
                         "    // Конструкторы и оператор присваивания недоступны клиентам\n" +
                         "    name() {}\n" +
-                        "    name( const Singleton& );  \n" +
-                        "    name& operator=( Singleton& );\n" +
+                        "    name( const name& );  \n" +
+                        "    name& operator=( name& );\n" +
                         "  public:\n" +
                         "    static name * getInstance() {\n" +
                         "        if(!p_instance)           \n" +
@@ -44,6 +44,27 @@ public class TestCreateSingletonForCPlusPlus {
                         "    }\n" +
                         "};\n" +
                         "name* name::p_instance = 0;";
+        GeneratorPatternsCPlusPlus generatorPatterns = new GeneratorPatternsCPlusPlus();
+        assertEquals(string,generatorPatterns.createSingleton("name"));
+    }
+    @Test
+    public void assertReturningValuesWithExampleWhichTheHaveNameOf_Human_() {
+        String string =
+                "class Human\n" +
+                        "{\n" +
+                        "  private:\n" +
+                        "    static Human * p_instance;\n" +
+                        "    Human() {}\n" +
+                        "    Human( const Human& );  \n" +
+                        "    Human& operator=( Human& );\n" +
+                        "  public:\n" +
+                        "    static Human * getInstance() {\n" +
+                        "        if(!p_instance)           \n" +
+                        "            p_instance = new Human();\n" +
+                        "        return p_instance;\n" +
+                        "    }\n" +
+                        "};\n" +
+                        "Human* Human::p_instance = 0;";
         GeneratorPatternsCPlusPlus generatorPatterns = new GeneratorPatternsCPlusPlus();
         assertEquals(string,generatorPatterns.createSingleton("name"));
     }
