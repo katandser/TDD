@@ -119,5 +119,18 @@ public class TestCreateSingletonForJava {
         GeneratorPatternsJava generatorPatterns = new GeneratorPatternsJava();
         assertEquals(string,generatorPatterns.createDelegation("B","B"));
     }
+    @Test
+    public void assertReturnValueDelegationC_C() {
+        String string =
+                "class C {\n" +
+                        "}\n" +
+                        "\n" +
+                        "class C1 {\n" +
+                        "    C b = new C();\n" +
+                        "}"
+                ;
+        GeneratorPatternsJava generatorPatterns = new GeneratorPatternsJava();
+        assertEquals(string,generatorPatterns.createDelegation("C","C"));
+    }
 }
 
