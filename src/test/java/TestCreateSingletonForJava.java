@@ -126,7 +126,7 @@ public class TestCreateSingletonForJava {
                         "}\n" +
                         "\n" +
                         "class C1 {\n" +
-                        "    C b = new C();\n" +
+                        "    C c = new C();\n" +
                         "}"
                 ;
         GeneratorPatternsJava generatorPatterns = new GeneratorPatternsJava();

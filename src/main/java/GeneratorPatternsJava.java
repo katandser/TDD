@@ -26,21 +26,21 @@ public class GeneratorPatternsJava extends GeneratorPatterns{
 
     public String createDelegation(String basicClass, String delegationClass) {
         if (basicClass.equals(delegationClass) == true) {
-            return "class B {\n" +
+            return "class " + basicClass + " {\n" +
                     "}\n" +
                     "\n" +
-                    "class B1 {\n" +
-                    "    B b = new B();\n" +
-                    "}"
-                    ;
+                    "class " + delegationClass + "1" + " {\n" +
+                    "    " + basicClass + " " + basicClass.toLowerCase() + " = new " + basicClass + "();\n" +
+                    "}";
         }
-
-        return "class " + basicClass + " {\n" +
+        else {
+            return "class " + basicClass + " {\n" +
                     "}\n" +
                     "\n" +
                     "class " + delegationClass + " {\n" +
                     "    " + basicClass + " " + basicClass.toLowerCase() + " = new " + basicClass + "();\n" +
                     "}";
+        }
     }
     public String createDelegation(String basicClass, String delegationClass, String ... method) {
         return new String();
